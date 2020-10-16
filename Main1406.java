@@ -39,10 +39,12 @@ public class Main1406 {
         while(!left.isEmpty()){
             right.push(left.pop());
         }
-
+        StringBuilder sb = new StringBuilder();
         while(!right.isEmpty()){
-            System.out.print(right.pop());
+            sb.append(right.pop());
         }
+
+        System.out.println(sb.toString());
 
         br.close();
         left.clear();
