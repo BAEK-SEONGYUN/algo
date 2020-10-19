@@ -43,5 +43,6 @@ public class Main10845 {
                 }
             }
         }
+        sc.close();
     }
 }
