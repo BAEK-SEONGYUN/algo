@@ -30,6 +30,7 @@ public class Main10866 {
 		   }else if(a.equals("back")) {
 			   System.out.println(deque.isEmpty()?-1:deque.peekLast());
 		   }
-	   }
+       }
+       sc.close();
    	}
 }
