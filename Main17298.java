@@ -10,14 +10,28 @@ public class Main17298 {
         int n = Integer.parseInt(br.readLine());
         int[] num = new int[n];
         String[] str = br.readLine().split(" ");
-        
-        for (int i = 0; i < str.length; i++) {
+
+        for (int i = str.length-1; i >= 0; i--) {
             num[i] = Integer.parseInt(str[i]);
         }
 
-        sb.append(-1);
-        sb.append(" ");
-
+        for (int i = n-1; i >= 0; i--) {
+            
+            while(!stack.isEmpty() && num[i] >= stack.peek()){
+                stack.pop();
+            }
+            if(stack.isEmpty()){
+                sol.push(-1);  
+            }
+            else{
+                sol.push(stack.peek());
+            }
+            stack.push(num[i]);
+        }
        
+        while(!sol.isEmpty()){
+            sb.append(sol.pop() + " ");
+        }
+        System.out.print(sb.toString());
     }   
 }
