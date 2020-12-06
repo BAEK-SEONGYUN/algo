@@ -11,7 +11,7 @@ public class Main2004 {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        
+        System.out.println(n/5 - m/5 - (n-m)/5 + 1);
 
     }    
 }

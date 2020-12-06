@@ -33,7 +33,7 @@ public class Main1934 {
         
 
         for (int i = 0; i < n; i++) {
-                       
+            
         }
 
 
