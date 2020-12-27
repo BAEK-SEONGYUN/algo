@@ -8,7 +8,7 @@ public class Main2798 {
         
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
+        //StringBuilder sb = new StringBuilder();
         StringTokenizer st;
 
         st = new StringTokenizer(br.readLine());

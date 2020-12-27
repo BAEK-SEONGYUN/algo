@@ -8,7 +8,7 @@ public class Main2231 {
 
         int len = String.valueOf(n).length();
 
-        int sol = 0;
+        //int sol = 0;
 
         for (int i = n-(9*len); i <= n; i++) {
             
