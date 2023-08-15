@@ -44,12 +44,10 @@ def solution(id_list, reports, k):
         dic_id[name].append(reported)
         dic_reported[reported] += 1
 
-    print(dic_reported)
+    # print(dic_reported)
     for val in dic_id.values():
         result = 0
         for v in val:
-            print(v)
-            print(dic_reported[v])
             if dic_reported[v] >= k:
                 result += 1
         answer.append(result)
